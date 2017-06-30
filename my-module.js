@@ -13,8 +13,9 @@ function countLetters(word) {
   }
 console.log(outputObject);
 };
-// console.log(outputObject);
 
 module.exports = {
-  letterCounter : countLetters
+  letterCounter : function(word) {
+    countLetters(word)
+  }
 };
